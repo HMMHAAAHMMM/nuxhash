@@ -1,4 +1,3 @@
-  
 import json
 import os
 import socket
@@ -151,6 +150,7 @@ class ExcavatorServer(object):
 
     def send_command(self, method, params):
         """Sends a command to excavator, returns the JSON-encoded response.
+
         method -- name of the command to execute
         params -- list of arguments for the command
         """
@@ -181,6 +181,7 @@ class ExcavatorServer(object):
 
     def send_command_only(self, method, params):
         """Sends a command to excavator without reading the response.
+
         method -- name of the command to execute
         params -- list of arguments for the command
         """
@@ -386,3 +387,4 @@ class Excavator(miner.Miner):
     def settings(self, v):
         miner.Miner.settings.setter(v)
         self.server.settings = v
+
