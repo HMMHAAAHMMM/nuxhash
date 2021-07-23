@@ -18,9 +18,7 @@ ALGORITHMS = [
     'blake2s',
     'daggerhashimoto',
     'lyra2rev2',
-    'daggerhashimoto_decred',
-    #'daggerhashimoto_sia',
-    'daggerhashimoto_pascal'
+    'daggerhashimoto_decred'
     ]
 NHMP_PORT = 3200
 
