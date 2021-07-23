@@ -1,3 +1,4 @@
+  
 import json
 import os
 import socket
@@ -21,6 +22,13 @@ ALGORITHMS = [
     'daggerhashimoto_decred',
     #'daggerhashimoto_sia',
     'daggerhashimoto_pascal',
+    #'cryptonight',
+    'keccak',
+    'neoscrypt',
+    #'nist5',
+    'cryptonightV7',
+    'cryptonightV8',
+    'lyra2z',
     'x16r'
     ]
 NHMP_PORT = 3200
@@ -143,7 +151,6 @@ class ExcavatorServer(object):
 
     def send_command(self, method, params):
         """Sends a command to excavator, returns the JSON-encoded response.
-
         method -- name of the command to execute
         params -- list of arguments for the command
         """
@@ -174,7 +181,6 @@ class ExcavatorServer(object):
 
     def send_command_only(self, method, params):
         """Sends a command to excavator without reading the response.
-
         method -- name of the command to execute
         params -- list of arguments for the command
         """
@@ -380,4 +386,3 @@ class Excavator(miner.Miner):
     def settings(self, v):
         miner.Miner.settings.setter(v)
         self.server.settings = v
-
