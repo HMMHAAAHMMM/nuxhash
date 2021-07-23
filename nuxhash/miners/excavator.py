@@ -20,15 +20,7 @@ ALGORITHMS = [
     'lyra2rev2',
     'daggerhashimoto_decred',
     #'daggerhashimoto_sia',
-    'daggerhashimoto_pascal',
-    #'cryptonight',
-    'keccak',
-    'neoscrypt',
-    #'nist5',
-    'cryptonightV7',
-    'cryptonightV8',
-    'lyra2z',
-    'x16r'
+    'daggerhashimoto_pascal'
     ]
 NHMP_PORT = 3200
 
