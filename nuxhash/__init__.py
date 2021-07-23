@@ -1,4 +1,4 @@
-def nuxhashd():
+def ramu():
     from nuxhash.daemon import main
     main()
 
